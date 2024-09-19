@@ -4,7 +4,7 @@
 
 [A MODIFIER : adapter au lien du projet]
 
-[![Workflow Init](https://github.com/ansforge/IG-fhir-partage-de-documents-de-sante/actions/workflows/fhir-workflows.yml/badge.svg)](https://github.com/ansforge/IG-fhir-partage-de-documents-de-sante/actions/workflows/fhir-workflows.yml)
+[![Workflow Init](https://github.com/ansforge/IG-fhir-veille-sanitaire/actions/workflows/fhir-workflows.yml/badge.svg)](https://github.com/ansforge/IG-fhir-veille-sanitaire/actions/workflows/fhir-workflows.yml)
 
 Cet exemple d'Implementation Guide (IG) très simplifié sert de base pour le développement de nouveaux guides d'implémentation. La démarche d'élaboration d'un nouvel IG est expliquée dans le [wiki de ce repo](https://github.com/ansforge/IG-modele/wiki).
 Le README ci-dessous constitue un template à adapter et compléter pour chaque projet.
