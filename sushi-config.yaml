@@ -1,9 +1,9 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.[code]
-canonical: https://interop.esante.gouv.fr/ig/fhir/[code] # the last part of canonical and id must be the same
-name: ExampleIG # Should be an acronym
-title: ANS IG Example
+id: ans.fhir.fr.vs
+canonical: https://interop.esante.gouv.fr/ig/fhir/vs # the last part of canonical and id must be the same
+name: VS # Should be an acronym
+title: Guide d'implémentation de Veille Sanitaire
 publisher:
   name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris
   url: https://esante.gouv.fr
@@ -16,8 +16,6 @@ jurisdiction: urn:iso:std:iso:3166#FR "FRANCE"
 
 parameters:
     shownav: 'true'
-
-
 
 pages:
     index.md:
