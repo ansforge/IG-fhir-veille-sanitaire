@@ -3,7 +3,7 @@ VS : Validation Results
 
 err = 0, warn = 15, info = 5
 IG Publisher Version: 1.6.25
-Generated Thu Sep 19 12:21:07 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.vs#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/vs)
+Generated Thu Sep 19 12:26:15 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.vs#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/vs)
  Build Errors : 0 / 3 / 0
  /home/runner/work/IG-fhir-veille-sanitaire/IG-fhir-veille-sanitaire/igSource/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 2 / 2
  /home/runner/work/IG-fhir-veille-sanitaire/IG-fhir-veille-sanitaire/igSource/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 2 / 2
