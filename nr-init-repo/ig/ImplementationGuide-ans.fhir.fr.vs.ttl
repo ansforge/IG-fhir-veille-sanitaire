@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "VS"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation de Veille Sanitaire"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-19T12:50:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-19T12:55:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -533,6 +533,19 @@
          fhir:value [ fhir:v "true" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/vs/StructureDefinition/vs-plandefinition> ;
+         fhir:reference [ fhir:v "StructureDefinition/vs-plandefinition" ]
+       ] ;
+       fhir:name [ fhir:v "VS PlanDefinition Profile" ] ;
+       fhir:description [ fhir:v "Profil permettant d'indiquer les évènements, conditions et actions associés à une veille sanitaire." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

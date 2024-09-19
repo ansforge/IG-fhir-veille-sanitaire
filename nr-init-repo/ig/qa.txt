@@ -1,15 +1,19 @@
 VS : Validation Results
 =========================================
 
-err = 1, warn = 3, info = 0
+err = 0, warn = 5, info = 1
 IG Publisher Version: 1.6.25
-Generated Thu Sep 19 12:51:07 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.vs#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/vs)
+Generated Thu Sep 19 12:56:00 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.vs#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/vs)
  Build Errors : 0 / 3 / 0
- /home/runner/work/IG-fhir-veille-sanitaire/IG-fhir-veille-sanitaire/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.vs : 1 / 0 / 1
+ /home/runner/work/IG-fhir-veille-sanitaire/IG-fhir-veille-sanitaire/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.vs : 0 / 0 / 1
+ /home/runner/work/IG-fhir-veille-sanitaire/IG-fhir-veille-sanitaire/igSource/fsh-generated/resources/StructureDefinition-vs-plandefinition : 0 / 2 / 2
 </table>
 == n/a ==
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.vs.json ==
-ERROR: ImplementationGuide/ans.fhir.fr.vs: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)
+== fsh-generated/resources/StructureDefinition-vs-plandefinition.json ==
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[30].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[4].binding: The definition for the element 'PlanDefinition.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/vs/StructureDefinition/vs-plandefinition'): The Implementation Guide contains no examples for this profile
