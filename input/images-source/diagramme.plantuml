@@ -1,0 +1,4 @@
+@startuml
+Editeur -> PlateformeVS: POST - demande de récupération des PlanDefinition
+PlateformeVS --> Editeur: Retour des PlanDefinition
+@enduml

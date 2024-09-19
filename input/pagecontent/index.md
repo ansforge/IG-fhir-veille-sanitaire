@@ -8,7 +8,7 @@
 <div style="width: 65%">
     <blockquote class="stu-note">
     <p>
-    <b>Attention !</b> Cet Implementation Guide n'est pas en version courante. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/fhir/[code - ig]
+    <b>Attention !</b> Cet Implementation Guide n'est pas en version courante. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/fhir/vs
     </p>
     </blockquote>
 </div>
@@ -23,25 +23,12 @@
 
 ### Introduction
 
-Définir ici de quoi parle l'IG (En termes non expert, compréhensible par un patient). Rajouter également les détails techniques sur le contexte et le besoin de cet IG
+Ce guide d'implémentation spécifie une API de diffusion des données étudiées dans le cadre d'une veille sanitaire, via une ressource PlanDefinition.
+Cette ressourcePlanDefinition pourra contenir un langage décisionnel (CQL) permettant d'identifier les données d'intérêt sur un document structuré standard (Ex. CDA ou FHIR Document)
 
-Les principales sections de l'IG  sont :
-
-* Le contexte de l'IG, quelle problématique il résout
-* Ce que les Implémenteurs doivent mettre en place
-* Un onglet "Ressources de conformité" pour s'assurer d'un schéma global entre tous les IGs
-
-### Périmètre du projet
-
-Définir en quelques lignes en anglais quel est le périmètre du projet
-
-Toujours laisser l'onglet "Ressources de conformité" pour s'assurer d'une cohérence globales entre tous les IGs
-
-### Auteurs et contributeurs
-
-| Role  | Nom | Organisation | Contact |
-| --- | --- | --- | --- |
-| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | prenom.nom@address.email |
+<div class="figure" style="width:100%;">
+    <p>{% include diagramme.svg %}</p>
+</div>
 
 ### Dépendances
 
