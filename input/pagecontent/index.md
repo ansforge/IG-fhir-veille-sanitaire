@@ -24,7 +24,10 @@
 ### Introduction
 
 Ce guide d'implémentation spécifie une API de diffusion des données étudiées dans le cadre d'une veille sanitaire, via une ressource PlanDefinition.
-Cette ressourcePlanDefinition pourra contenir un langage décisionnel (CQL) permettant d'identifier les données d'intérêt sur un document structuré standard (Ex. CDA ou FHIR Document)
+Une veille sanitaire se définit à partir d'un évènement, de conditions et d'actions.
+Cette ressourcePlanDefinition pourra contenir un langage décisionnel (CQL) permettant d'identifier les données d'intérêt sur un document structuré standard (Ex. CDA ou FHIR Document).
+
+Ce guide d'implémentation a été créé en s'inspirant de l'[IG medmorph](https://build.fhir.org/ig/HL7/fhir-medmorph/index.html)/
 
 <div class="figure" style="width:100%;">
     <p>{% include diagramme.svg %}</p>
