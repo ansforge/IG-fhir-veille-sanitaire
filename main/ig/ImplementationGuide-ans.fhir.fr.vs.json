@@ -10,7 +10,7 @@
   "name" : "VS",
   "title" : "Guide d'implémentation de Veille Sanitaire",
   "status" : "draft",
-  "date" : "2024-09-19T12:25:51+00:00",
+  "date" : "2024-10-03T15:16:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -629,109 +629,13 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/competence-code-system"
-      },
-      "name" : "Compétences CodeSystem",
-      "description" : "Compétences des professionnels de santé.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EyeColor"
-      },
-      "name" : "EyeColor",
-      "description" : "Eye color extension",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/EyeColorVS"
-      },
-      "name" : "EyeColor Value Set",
-      "description" : "Different eye colors.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/frpatient-exemple"
-      },
-      "name" : "frpatient-exemple",
-      "description" : "Exemple d'un patient français",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/vs/StructureDefinition/fr-patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/MeltingPotVS"
-      },
-      "name" : "Melting Pot Value Set",
-      "description" : "Melting Pot Value Set.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ModifiedAdministrativeGender"
-      },
-      "name" : "ModifiedAdministrativeGender",
-      "description" : "AdministrativeGender without unknown code",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-patient"
+        "reference" : "StructureDefinition/vs-plandefinition"
       },
-      "name" : "Patient français",
-      "description" : "Description du patient français",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TypeCarteVS"
-      },
-      "name" : "Type Carte Value Set",
-      "description" : "Type Carte Value Set.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/type-carte-code-system"
-      },
-      "name" : "Type de carte",
-      "description" : "Type de carte professionnelle et personnelle.",
+      "name" : "VS PlanDefinition Profile",
+      "description" : "Profil permettant d'indiquer les évènements, conditions et actions associés à une veille sanitaire.",
       "exampleBoolean" : false
     }],
     "page" : {

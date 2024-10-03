@@ -3,20 +3,12 @@
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
-  "extensions": [
-    {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/vs/StructureDefinition/EyeColor",
-      "title": "EyeColor",
-      "types": [
-        "CodeableConcept"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
-    "Patient": [
+    "PlanDefinition": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/vs/StructureDefinition/fr-patient",
-        "title": "Patient français"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/vs/StructureDefinition/vs-plandefinition",
+        "title": "VS PlanDefinition Profile"
       }
     ]
   },
@@ -34,9 +26,6 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
-      "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
@@ -61,9 +50,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/vs/StructureDefinition/EyeColor": [
-      "Patient"
     ]
   }
 }
