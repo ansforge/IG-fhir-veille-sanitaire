@@ -1,0 +1,18 @@
+VS : Validation Results
+=========================================
+
+err = 0, warn = 4, info = 1
+$--
+Generated $--. FHIR version $-- for ans.fhir.fr.vs#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/vs)
+ Build Errors : 0 / 3 / 0
+ /home/runner/work/IG-fhir-veille-sanitaire/IG-fhir-veille-sanitaire/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.vs : 0 / 0 / 1
+ /home/runner/work/IG-fhir-veille-sanitaire/IG-fhir-veille-sanitaire/igSource/fsh-generated/resources/StructureDefinition-vs-plandefinition : 0 / 1 / 2
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-ans.fhir.fr.vs.json ==
+== fsh-generated/resources/StructureDefinition-vs-plandefinition.json ==
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[30].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/vs/StructureDefinition/vs-plandefinition'): The Implementation Guide contains no examples for this profile
