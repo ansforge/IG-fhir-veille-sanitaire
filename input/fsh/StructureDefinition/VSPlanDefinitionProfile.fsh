@@ -1,12 +1,7 @@
-Alias: $fr-vs-plandefinition-actions = https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions
-
-
-Alias: $us-ph-plandefinition = http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-plandefinition
-Alias: $us-ph-named-eventtype = http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-named-eventtype
-
+Alias: $fr-cs-vs-plandefinition-actions = https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions
 
 Profile: VsPlanDefinitionProfile
-Parent: PlanDefinition
+Parent: PlanDefinition // Cf profil us-ph-plandefinition
 Id: vs-plandefinition
 Title: "VS PlanDefinition Profile"
 Description: "Profil permettant d'indiquer les évènements, conditions et actions associés à une veille sanitaire."
@@ -18,12 +13,8 @@ Description: "Profil permettant d'indiquer les évènements, conditions et actio
 * action ^slicing.rules = #open
 * action.code 0..1 MS
 // * action.code from $us-ph-plandefinition-action (extensible)
-* action.code ^binding.description = "The set of actions that can be used to create plan definition"
-* action.input.extension ^slicing.discriminator.type = #value
-* action.input.extension ^slicing.discriminator.path = "url"
-* action.input.extension ^slicing.rules = #closed
-* action.input.extension ^definition = "Defines extensions for the action."
-* action.input.extension ^mustSupport = false
+// * action.code ^binding.description = "The set of actions that can be used to create plan definition"
+
 * action.relatedAction.offsetDuration MS
 * action.relatedAction.offsetDuration ^definition = "The duration quantity may include a comparator, indicating how the offset should be applied. For example, <= 1 hour, meaning that the offset should be no more than 1 hour. This allows systems flexibility in scheduling the actions to isolate reporting activities to off hours."
 
@@ -47,16 +38,13 @@ Description: "Profil permettant d'indiquer les évènements, conditions et actio
 * action[initiateReporting].textEquivalent ^short = "Text equivalent of the \"start\" action."
 * action[initiateReporting].textEquivalent ^definition = "Text equivalent of the \"start\" action."
 * action[initiateReporting].code 1..1 MS
-* action[initiateReporting].code = $us-ph-plandefinition-actions#initiate-reporting-workflow
+* action[initiateReporting].code = $fr-cs-vs-plandefinition-actions#initiate-reporting-workflow
 * action[initiateReporting].code ^short = "Code for the \"start\" action."
 * action[initiateReporting].code ^definition = "The US-PH-PlanDefinition-Action code for the \"start\" action."
 * action[initiateReporting].trigger 1.. MS
-* action[initiateReporting].trigger obeys epd-1
 * action[initiateReporting].trigger ^short = "When the \"start\" action should be triggered."
-* action[initiateReporting].trigger ^definition = "When the \"start\" action should be triggered."
 // * action[initiateReporting].trigger.extension ..*
 // * action[initiateReporting].trigger.extension only Extension
-// * action[initiateReporting].trigger.extension obeys ele-1 and ext-1
 // * action[initiateReporting].trigger.extension ^slicing.discriminator.type = #value
 // * action[initiateReporting].trigger.extension ^slicing.discriminator.path = "url"
 // * action[initiateReporting].trigger.extension ^slicing.description = "Extensions are always sliced by (at least) url"
@@ -72,7 +60,6 @@ Description: "Profil permettant d'indiquer les évènements, conditions et actio
 // * action[initiateReporting].trigger.extension ^isModifier = false
 // * action[initiateReporting].trigger.extension ^isSummary = false
 // * action[initiateReporting].trigger.extension contains $us-ph-named-eventtype named namedEventType 0..1 MS
-// * action[initiateReporting].trigger.extension[namedEventType] obeys ele-1 and ext-1
 // * action[initiateReporting].trigger.extension[namedEventType] ^short = "Indicates the types of named events to subscribe to from the HER."
 // * action[initiateReporting].trigger.extension[namedEventType] ^definition = "Indicates the types of named events to subscribe to from the HER."
 // * action[initiateReporting].trigger.extension[namedEventType] ^base.path = "Element.extension"
@@ -96,11 +83,9 @@ Description: "Profil permettant d'indiquer les évènements, conditions et actio
 * action[executeReportingWorkflow].description 1.. MS
 * action[executeReportingWorkflow].description = "This action represents the start of the check for reportable conditions in response to the encounter-start event. This is an example of executing a reporting workflow with other actions."
 * action[executeReportingWorkflow].description ^short = "Check for reportability conditions"
-* action[executeReportingWorkflow].description ^definition = "Check for Reportable Conditions."
 * action[executeReportingWorkflow].code 1..1 MS
-* action[executeReportingWorkflow].code = $us-ph-plandefinition-actions#execute-reporting-workflow
+* action[executeReportingWorkflow].code = $fr-cs-vs-plandefinition-actions#execute-reporting-workflow
 * action[executeReportingWorkflow].code ^short = "Code for the \"execute-reporting-workflow\" action."
-* action[executeReportingWorkflow].code ^definition = "The US-PH-PlanDefinition-Action code for the \"execute-reporting-workflow\" action."
 // * action[executeReportingWorkflow].action ^slicing.discriminator.type = #value
 // * action[executeReportingWorkflow].action ^slicing.discriminator.path = "id"
 // * action[executeReportingWorkflow].action ^slicing.rules = #open
@@ -108,7 +93,7 @@ Description: "Profil permettant d'indiquer les évènements, conditions et actio
 // * action[executeReportingWorkflow].action[isEncounterReportable].id 1.. MS
 // * action[executeReportingWorkflow].action[isEncounterReportable].id = "is-encounter-reportable"
 // * action[executeReportingWorkflow].action[isEncounterReportable].code 1..1
-// * action[executeReportingWorkflow].action[isEncounterReportable].code = $us-ph-plandefinition-actions#check-trigger-codes
+// * action[executeReportingWorkflow].action[isEncounterReportable].code = $fr-cs-vs-plandefinition-actions#check-trigger-codes
 // * action[executeReportingWorkflow].action[isEncounterReportable].condition.kind = #applicability
 // * action[executeReportingWorkflow].action[isEncounterReportable].condition.expression 1.. MS
 // * action[executeReportingWorkflow].action[isEncounterReportable].condition.expression.language = #text/fhirpath
@@ -125,7 +110,7 @@ Description: "Profil permettant d'indiquer les évènements, conditions et actio
 * action[createReport].id = "create-report"
 * action[createReport].description = "This action represents the creation of the Report. It subsequently calls validate."
 * action[createReport].code 1..1
-* action[createReport].code = $us-ph-plandefinition-actions#create-report
+* action[createReport].code = $fr-cs-vs-plandefinition-actions#create-report
 * action[createReport].relatedAction 1..1 MS
 * action[createReport].relatedAction.actionId = "validate-report"
 * action[createReport].relatedAction.relationship = #before-start
@@ -136,7 +121,7 @@ Description: "Profil permettant d'indiquer les évènements, conditions et actio
 * action[validateReport].id = "validate-report"
 * action[validateReport].description = "This action represents the validation of the Report. It subsequently calls route-and-send."
 * action[validateReport].code 1..1
-* action[validateReport].code = $us-ph-plandefinition-actions#validate-report
+* action[validateReport].code = $fr-cs-vs-plandefinition-actions#validate-report
 * action[validateReport].relatedAction 1..1 MS
 * action[validateReport].relatedAction.actionId = "route-and-send-report"
 * action[validateReport].relatedAction.relationship = #before-start
@@ -151,25 +136,4 @@ Description: "Profil permettant d'indiquer les évènements, conditions et actio
 * action[routeAndSendReport].textEquivalent 1.. MS
 * action[routeAndSendReport].textEquivalent = "Route and send Report"
 * action[routeAndSendReport].code 1..1
-* action[routeAndSendReport].code = $us-ph-plandefinition-actions#submit-report
-
-Invariant: epd-1
-Description: "The code value of the namedEventType SHALL be the same as the name element"
-* severity = #error
-* expression = "extension('http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-named-eventtype').value.coding.code.supersetOf(name)"
-* xpath = "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"name\")])"
-* source = "http://hl7.org/fhir/StructureDefinition/Extension"
-
-Invariant: ele-1
-Description: "All FHIR elements must have a @value or children"
-* severity = #error
-* expression = "hasValue() or (children().count() > id.count())"
-* xpath = "@value|f:*|h:div"
-* source = "http://hl7.org/fhir/StructureDefinition/Element"
-
-Invariant: ext-1
-Description: "Must have either extensions or value[x], not both"
-* severity = #error
-* expression = "extension.exists() != value.exists()"
-* xpath = "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])"
-* source = "http://hl7.org/fhir/StructureDefinition/Extension"
+* action[routeAndSendReport].code = $fr-cs-vs-plandefinition-actions#submit-report
