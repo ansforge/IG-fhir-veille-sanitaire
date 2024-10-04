@@ -1,0 +1,5 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.vs.json	3644	-	0	0	0	0	0	0	4	75	0	0	0	0	0	0	0	1	0	0	95	103	0	0	0	2	0	1
+fsh-generated/resources/CodeSystem-fr-cs-vs-plandefinition-actions.json	5090	18	0	0	0	0	0	0	1	27	0	0	1	0	0	0	0	0	0	0	43	1974	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-vs-plandefinition.json	12127	25	1	0	0	0	0	435	0	283	0	0	1	0	0	0	0	4	0	0	923	4295	0	0	0	47	0	4
+fsh-generated/resources/ValueSet-fr-vs-vs-plandefinition-actions.json	769	19	0	0	0	0	0	0	0	81	0	0	0	0	0	0	0	0	0	0	25	1978	0	0	0	1	0	1

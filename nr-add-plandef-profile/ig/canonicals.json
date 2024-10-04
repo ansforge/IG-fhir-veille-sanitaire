@@ -1,0 +1,30 @@
+[
+  {
+    "id" : "fr-cs-vs-plandefinition-actions",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions",
+    "version" : "0.1.0",
+    "name" : "CSPlanDefinitionActions"
+  },
+  {
+    "id" : "ans.fhir.fr.vs",
+    "type" : "ImplementationGuide",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/vs/ImplementationGuide/ans.fhir.fr.vs",
+    "version" : "0.1.0",
+    "name" : "VS"
+  },
+  {
+    "id" : "vs-plandefinition",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/vs/StructureDefinition/vs-plandefinition",
+    "version" : "0.1.0",
+    "name" : "VsPlanDefinitionProfile"
+  },
+  {
+    "id" : "fr-vs-vs-plandefinition-actions",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/vs/ValueSet/fr-vs-vs-plandefinition-actions",
+    "version" : "0.1.0",
+    "name" : "VSPlanDefinitionActions"
+  }
+]

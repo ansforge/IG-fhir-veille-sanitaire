@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="834e17fa-d9d3-4b7e-8c9e-013732e50fc2"/>
+  <meta>
+    <lastUpdated value="2024-10-04T15:18:57.064+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/vs/ValueSet/fr-vs-vs-plandefinition-actions"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html">codesystem FR Veille Sanitaire PlanDefinition Action Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 19 concepts</p>
+            <table class="codes">
+              <tr>
+                <td>
+                  <b>Level</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-initiate-reporting-workflow"> </a>1
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-initiate-reporting-workflow">initiate-reporting-workflow</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Initiate a reporting workflow</td>
+                <td>
+                  <div>
+                    <p>Request the initiation of a reporting workflow for a patient for a specific context (e.g., encounter).</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-execute-reporting-workflow"> </a>1
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-execute-reporting-workflow">execute-reporting-workflow</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Execute a series of actions to accomplish reporting</td>
+                <td>
+                  <div>
+                    <p>This is top level action that uses other defined actions to accomplish reporting for a specific context (e.g., encounter).</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-check-trigger-codes"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-check-trigger-codes">check-trigger-codes</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Evaluate candidate patient's data against trigger codes to determine reportability</td>
+                <td>
+                  <div>
+                    <p>Evaluate candidate patient's data against trigger codes to determine reportability.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-evaluate-condition"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-evaluate-condition">evaluate-condition</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Evaluate condition to determine reportability</td>
+                <td>
+                  <div>
+                    <p>Evaluate condition to determine reportability.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-evaluate-measure"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-evaluate-measure">evaluate-measure</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Evaluate measure to determine reportability</td>
+                <td>
+                  <div>
+                    <p>Evaluate measure to determine reportability.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-check-participant-registration"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-check-participant-registration">check-participant-registration</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Evaluate participants in encounter for reportability</td>
+                <td>
+                  <div>
+                    <p>Evaluate encounter participants such as patient, practitioner, organization on whether they have been selected for reportability.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-create-report"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-create-report">create-report</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Create a report for submission to a PHA or a Research Organization</td>
+                <td>
+                  <div>
+                    <p>Create a Report containing data for patients or participants who have been identified by other medmorph plandefinition actions such as initiate-reporting-workflow, check-trigger-codes and check-participant-registration.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-validate-report"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-validate-report">validate-report</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Validate Report against specified profiles and terminologies.</td>
+                <td>
+                  <div>
+                    <p>Validate Report against specified profiles and terminologies.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-submit-report"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-submit-report">submit-report</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Submit the report to specified endpoint</td>
+                <td>
+                  <div>
+                    <p>Submit the report to specified endpoint.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-deidentify-report"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-deidentify-report">deidentify-report</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Deidentify the report before submitting the report</td>
+                <td>
+                  <div>
+                    <p>Deidentify the report before submitting the report.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-anonymize-report"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-anonymize-report">anonymize-report</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Anonymize the report before submitting the report</td>
+                <td>
+                  <div>
+                    <p>Anonymize the report before submitting the report.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-pseudonymize-report"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-pseudonymize-report">pseudonymize-report</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Pseudonymize the report before submitting the report</td>
+                <td>
+                  <div>
+                    <p>Pseudonymize the report before submitting the report.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-encrypt-report"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-encrypt-report">encrypt-report</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Encrypt the report before submitting the report</td>
+                <td>
+                  <div>
+                    <p>Encrypt the report before submitting the report.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-complete-reporting"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-complete-reporting">complete-reporting</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Complete reporting for the patient</td>
+                <td>
+                  <div>
+                    <p>Complete the reporting for the patient, after which no further reports will be sent for a specific context (e.g., Encounter).</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-extract-research-data"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-extract-research-data">extract-research-data</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Extract data from a Data Source for one or more patients.</td>
+                <td>
+                  <div>
+                    <p>Extract data from a Data Source for one or more patients for research purposes.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-load-research-data"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-load-research-data">load-research-data</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Load extracted data from a Data Source to a data mart.</td>
+                <td>
+                  <div>
+                    <p>Extracted data from a Data Source for one or more patients for research purposes.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-terminate-reporting-workflow"> </a>1
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-terminate-reporting-workflow">terminate-reporting-workflow</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Terminate a reporting workflow</td>
+                <td>
+                  <div>
+                    <p>Request the initiation of terminating a reporting workflow.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-cancel-report"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-cancel-report">cancel-report</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Cancel an already submitted report</td>
+                <td>
+                  <div>
+                    <p>Cancel an already submitted report.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions-report-chronic-disease-surveillance"> </a>1
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-fr-cs-vs-plandefinition-actions.html#fr-cs-vs-plandefinition-actions-report-chronic-disease-surveillance">report-chronic-disease-surveillance</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</td>
+                <td>Report Chronic Disease Surveillance report</td>
+                <td>
+                  <div>
+                    <p>This action represents the reporting of a Chronic Disease Surveillance report.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/vs/ValueSet/fr-vs-vs-plandefinition-actions"/>
+        <version value="0.1.0"/>
+        <name value="VSPlanDefinitionActions"/>
+        <title value="FR Veille Sanitaire PlanDefinition Action Codes"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-10-04T15:18:57+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="FRANCE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:af1d5798-4f20-49f3-b9f7-608ec653b9de"/>
+          <timestamp value="2024-10-04T15:19:16+00:00"/>
+          <total value="19"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+            <code value="initiate-reporting-workflow"/>
+            <display value="Initiate a reporting workflow"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+            <code value="execute-reporting-workflow"/>
+            <display value="Execute a series of actions to accomplish reporting"/>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="check-trigger-codes"/>
+              <display value="Evaluate candidate patient's data against trigger codes to determine reportability"/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="evaluate-condition"/>
+              <display value="Evaluate condition to determine reportability"/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="evaluate-measure"/>
+              <display value="Evaluate measure to determine reportability"/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="check-participant-registration"/>
+              <display value="Evaluate participants in encounter for reportability"/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="create-report"/>
+              <display value="Create a report for submission to a PHA or a Research Organization"/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="validate-report"/>
+              <display value="Validate Report against specified profiles and terminologies."/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="submit-report"/>
+              <display value="Submit the report to specified endpoint"/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="deidentify-report"/>
+              <display value="Deidentify the report before submitting the report"/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="anonymize-report"/>
+              <display value="Anonymize the report before submitting the report"/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="pseudonymize-report"/>
+              <display value="Pseudonymize the report before submitting the report"/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="encrypt-report"/>
+              <display value="Encrypt the report before submitting the report"/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="complete-reporting"/>
+              <display value="Complete reporting for the patient"/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="extract-research-data"/>
+              <display value="Extract data from a Data Source for one or more patients."/>
+            </contains>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="load-research-data"/>
+              <display value="Load extracted data from a Data Source to a data mart."/>
+            </contains>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+            <code value="terminate-reporting-workflow"/>
+            <display value="Terminate a reporting workflow"/>
+            <contains>
+              <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+              <code value="cancel-report"/>
+              <display value="Cancel an already submitted report"/>
+            </contains>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+            <code value="report-chronic-disease-surveillance"/>
+            <display value="Report Chronic Disease Surveillance report"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

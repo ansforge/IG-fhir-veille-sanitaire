@@ -1,0 +1,220 @@
+{
+  "date" : "Fri, 04 Oct, 2024 15:18:57 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.vs.json",
+      "size" : 3644,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 29,
+          "length" : 22
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 30,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 75
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 2750
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 95
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 103
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 54,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-fr-cs-vs-plandefinition-actions.json",
+      "size" : 5090,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 29,
+          "length" : 18
+        },
+        {
+          "activity" : "load",
+          "start" : 29,
+          "length" : 16
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 30,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 27
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 474
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 43
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 1974
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 54,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-vs-plandefinition.json",
+      "size" : 12127,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 29,
+          "length" : 25
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 29,
+          "length" : 20
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 29,
+          "length" : 435
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 283
+        },
+        {
+          "activity" : "validate",
+          "start" : 31,
+          "length" : 3312
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 923
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 4295
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 54,
+          "length" : 47
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 58,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-fr-vs-vs-plandefinition-actions.json",
+      "size" : 769,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 29,
+          "length" : 19
+        },
+        {
+          "activity" : "load",
+          "start" : 29,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 81
+        },
+        {
+          "activity" : "validate",
+          "start" : 31,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 38,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 46,
+          "length" : 1978
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 54,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

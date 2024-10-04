@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-cs-vs-plandefinition-actions"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fr-cs-vs-plandefinition-actions</b></p><a name=\"fr-cs-vs-plandefinition-actions\"> </a><a name=\"hcfr-cs-vs-plandefinition-actions\"> </a><a name=\"fr-cs-vs-plandefinition-actions-fr-FR\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">initiate-reporting-workflow<a name=\"fr-cs-vs-plandefinition-actions-initiate-reporting-workflow\"> </a></td><td>Initiate a reporting workflow</td><td>Request the initiation of a reporting workflow for a patient for a specific context (e.g., encounter).</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">execute-reporting-workflow<a name=\"fr-cs-vs-plandefinition-actions-execute-reporting-workflow\"> </a></td><td>Execute a series of actions to accomplish reporting</td><td>This is top level action that uses other defined actions to accomplish reporting for a specific context (e.g., encounter).</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  check-trigger-codes<a name=\"fr-cs-vs-plandefinition-actions-check-trigger-codes\"> </a></td><td>Evaluate candidate patient's data against trigger codes to determine reportability</td><td>Evaluate candidate patient's data against trigger codes to determine reportability.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  evaluate-condition<a name=\"fr-cs-vs-plandefinition-actions-evaluate-condition\"> </a></td><td>Evaluate condition to determine reportability</td><td>Evaluate condition to determine reportability.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  evaluate-measure<a name=\"fr-cs-vs-plandefinition-actions-evaluate-measure\"> </a></td><td>Evaluate measure to determine reportability</td><td>Evaluate measure to determine reportability.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  check-participant-registration<a name=\"fr-cs-vs-plandefinition-actions-check-participant-registration\"> </a></td><td>Evaluate participants in encounter for reportability</td><td>Evaluate encounter participants such as patient, practitioner, organization on whether they have been selected for reportability.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  create-report<a name=\"fr-cs-vs-plandefinition-actions-create-report\"> </a></td><td>Create a report for submission to a PHA or a Research Organization</td><td>Create a Report containing data for patients or participants who have been identified by other medmorph plandefinition actions such as initiate-reporting-workflow, check-trigger-codes and check-participant-registration.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  validate-report<a name=\"fr-cs-vs-plandefinition-actions-validate-report\"> </a></td><td>Validate Report against specified profiles and terminologies.</td><td>Validate Report against specified profiles and terminologies.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  submit-report<a name=\"fr-cs-vs-plandefinition-actions-submit-report\"> </a></td><td>Submit the report to specified endpoint</td><td>Submit the report to specified endpoint.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  deidentify-report<a name=\"fr-cs-vs-plandefinition-actions-deidentify-report\"> </a></td><td>Deidentify the report before submitting the report</td><td>Deidentify the report before submitting the report.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  anonymize-report<a name=\"fr-cs-vs-plandefinition-actions-anonymize-report\"> </a></td><td>Anonymize the report before submitting the report</td><td>Anonymize the report before submitting the report.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  pseudonymize-report<a name=\"fr-cs-vs-plandefinition-actions-pseudonymize-report\"> </a></td><td>Pseudonymize the report before submitting the report</td><td>Pseudonymize the report before submitting the report.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  encrypt-report<a name=\"fr-cs-vs-plandefinition-actions-encrypt-report\"> </a></td><td>Encrypt the report before submitting the report</td><td>Encrypt the report before submitting the report.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  complete-reporting<a name=\"fr-cs-vs-plandefinition-actions-complete-reporting\"> </a></td><td>Complete reporting for the patient</td><td>Complete the reporting for the patient, after which no further reports will be sent for a specific context (e.g., Encounter).</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  extract-research-data<a name=\"fr-cs-vs-plandefinition-actions-extract-research-data\"> </a></td><td>Extract data from a Data Source for one or more patients.</td><td>Extract data from a Data Source for one or more patients for research purposes.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  load-research-data<a name=\"fr-cs-vs-plandefinition-actions-load-research-data\"> </a></td><td>Load extracted data from a Data Source to a data mart.</td><td>Extracted data from a Data Source for one or more patients for research purposes.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">terminate-reporting-workflow<a name=\"fr-cs-vs-plandefinition-actions-terminate-reporting-workflow\"> </a></td><td>Terminate a reporting workflow</td><td>Request the initiation of terminating a reporting workflow.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  cancel-report<a name=\"fr-cs-vs-plandefinition-actions-cancel-report\"> </a></td><td>Cancel an already submitted report</td><td>Cancel an already submitted report.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">report-chronic-disease-surveillance<a name=\"fr-cs-vs-plandefinition-actions-report-chronic-disease-surveillance\"> </a></td><td>Report Chronic Disease Surveillance report</td><td>This action represents the reporting of a Chronic Disease Surveillance report.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CSPlanDefinitionActions"] ; # 
+  fhir:title [ fhir:v "FR Veille Sanitaire PlanDefinition Action Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-10-04T15:18:57+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The FR Veille Sanitaire PlanDefinition Actions CodeSystem is a 'starter set' of codes supported for identifying actions in PlanDefinition."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "FRANCE" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "19"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "initiate-reporting-workflow" ] ;
+     fhir:display [ fhir:v "Initiate a reporting workflow" ] ;
+     fhir:definition [ fhir:v "Request the initiation of a reporting workflow for a patient for a specific context (e.g., encounter)." ]
+  ] [
+     fhir:code [ fhir:v "execute-reporting-workflow" ] ;
+     fhir:display [ fhir:v "Execute a series of actions to accomplish reporting" ] ;
+     fhir:definition [ fhir:v "This is top level action that uses other defined actions to accomplish reporting for a specific context (e.g., encounter)." ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "check-trigger-codes" ] ;
+       fhir:display [ fhir:v "Evaluate candidate patient's data against trigger codes to determine reportability" ] ;
+       fhir:definition [ fhir:v "Evaluate candidate patient's data against trigger codes to determine reportability." ]
+     ] [
+       fhir:code [ fhir:v "evaluate-condition" ] ;
+       fhir:display [ fhir:v "Evaluate condition to determine reportability" ] ;
+       fhir:definition [ fhir:v "Evaluate condition to determine reportability." ]
+     ] [
+       fhir:code [ fhir:v "evaluate-measure" ] ;
+       fhir:display [ fhir:v "Evaluate measure to determine reportability" ] ;
+       fhir:definition [ fhir:v "Evaluate measure to determine reportability." ]
+     ] [
+       fhir:code [ fhir:v "check-participant-registration" ] ;
+       fhir:display [ fhir:v "Evaluate participants in encounter for reportability" ] ;
+       fhir:definition [ fhir:v "Evaluate encounter participants such as patient, practitioner, organization on whether they have been selected for reportability." ]
+     ] [
+       fhir:code [ fhir:v "create-report" ] ;
+       fhir:display [ fhir:v "Create a report for submission to a PHA or a Research Organization" ] ;
+       fhir:definition [ fhir:v "Create a Report containing data for patients or participants who have been identified by other medmorph plandefinition actions such as initiate-reporting-workflow, check-trigger-codes and check-participant-registration." ]
+     ] [
+       fhir:code [ fhir:v "validate-report" ] ;
+       fhir:display [ fhir:v "Validate Report against specified profiles and terminologies." ] ;
+       fhir:definition [ fhir:v "Validate Report against specified profiles and terminologies." ]
+     ] [
+       fhir:code [ fhir:v "submit-report" ] ;
+       fhir:display [ fhir:v "Submit the report to specified endpoint" ] ;
+       fhir:definition [ fhir:v "Submit the report to specified endpoint." ]
+     ] [
+       fhir:code [ fhir:v "deidentify-report" ] ;
+       fhir:display [ fhir:v "Deidentify the report before submitting the report" ] ;
+       fhir:definition [ fhir:v "Deidentify the report before submitting the report." ]
+     ] [
+       fhir:code [ fhir:v "anonymize-report" ] ;
+       fhir:display [ fhir:v "Anonymize the report before submitting the report" ] ;
+       fhir:definition [ fhir:v "Anonymize the report before submitting the report." ]
+     ] [
+       fhir:code [ fhir:v "pseudonymize-report" ] ;
+       fhir:display [ fhir:v "Pseudonymize the report before submitting the report" ] ;
+       fhir:definition [ fhir:v "Pseudonymize the report before submitting the report." ]
+     ] [
+       fhir:code [ fhir:v "encrypt-report" ] ;
+       fhir:display [ fhir:v "Encrypt the report before submitting the report" ] ;
+       fhir:definition [ fhir:v "Encrypt the report before submitting the report." ]
+     ] [
+       fhir:code [ fhir:v "complete-reporting" ] ;
+       fhir:display [ fhir:v "Complete reporting for the patient" ] ;
+       fhir:definition [ fhir:v "Complete the reporting for the patient, after which no further reports will be sent for a specific context (e.g., Encounter)." ]
+     ] [
+       fhir:code [ fhir:v "extract-research-data" ] ;
+       fhir:display [ fhir:v "Extract data from a Data Source for one or more patients." ] ;
+       fhir:definition [ fhir:v "Extract data from a Data Source for one or more patients for research purposes." ]
+     ] [
+       fhir:code [ fhir:v "load-research-data" ] ;
+       fhir:display [ fhir:v "Load extracted data from a Data Source to a data mart." ] ;
+       fhir:definition [ fhir:v "Extracted data from a Data Source for one or more patients for research purposes." ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "terminate-reporting-workflow" ] ;
+     fhir:display [ fhir:v "Terminate a reporting workflow" ] ;
+     fhir:definition [ fhir:v "Request the initiation of terminating a reporting workflow." ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "cancel-report" ] ;
+       fhir:display [ fhir:v "Cancel an already submitted report" ] ;
+       fhir:definition [ fhir:v "Cancel an already submitted report." ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "report-chronic-disease-surveillance" ] ;
+     fhir:display [ fhir:v "Report Chronic Disease Surveillance report" ] ;
+     fhir:definition [ fhir:v "This action represents the reporting of a Chronic Disease Surveillance report." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

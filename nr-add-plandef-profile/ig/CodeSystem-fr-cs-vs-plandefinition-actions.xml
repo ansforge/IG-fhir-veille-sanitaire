@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fr-cs-vs-plandefinition-actions"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem fr-cs-vs-plandefinition-actions</b></p><a name="fr-cs-vs-plandefinition-actions"> </a><a name="hcfr-cs-vs-plandefinition-actions"> </a><a name="fr-cs-vs-plandefinition-actions-fr-FR"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions</code> defines the following codes in an undefined hierarchy:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style="white-space:nowrap">initiate-reporting-workflow<a name="fr-cs-vs-plandefinition-actions-initiate-reporting-workflow"> </a></td><td>Initiate a reporting workflow</td><td>Request the initiation of a reporting workflow for a patient for a specific context (e.g., encounter).</td></tr><tr><td>1</td><td style="white-space:nowrap">execute-reporting-workflow<a name="fr-cs-vs-plandefinition-actions-execute-reporting-workflow"> </a></td><td>Execute a series of actions to accomplish reporting</td><td>This is top level action that uses other defined actions to accomplish reporting for a specific context (e.g., encounter).</td></tr><tr><td>2</td><td style="white-space:nowrap">  check-trigger-codes<a name="fr-cs-vs-plandefinition-actions-check-trigger-codes"> </a></td><td>Evaluate candidate patient's data against trigger codes to determine reportability</td><td>Evaluate candidate patient's data against trigger codes to determine reportability.</td></tr><tr><td>2</td><td style="white-space:nowrap">  evaluate-condition<a name="fr-cs-vs-plandefinition-actions-evaluate-condition"> </a></td><td>Evaluate condition to determine reportability</td><td>Evaluate condition to determine reportability.</td></tr><tr><td>2</td><td style="white-space:nowrap">  evaluate-measure<a name="fr-cs-vs-plandefinition-actions-evaluate-measure"> </a></td><td>Evaluate measure to determine reportability</td><td>Evaluate measure to determine reportability.</td></tr><tr><td>2</td><td style="white-space:nowrap">  check-participant-registration<a name="fr-cs-vs-plandefinition-actions-check-participant-registration"> </a></td><td>Evaluate participants in encounter for reportability</td><td>Evaluate encounter participants such as patient, practitioner, organization on whether they have been selected for reportability.</td></tr><tr><td>2</td><td style="white-space:nowrap">  create-report<a name="fr-cs-vs-plandefinition-actions-create-report"> </a></td><td>Create a report for submission to a PHA or a Research Organization</td><td>Create a Report containing data for patients or participants who have been identified by other medmorph plandefinition actions such as initiate-reporting-workflow, check-trigger-codes and check-participant-registration.</td></tr><tr><td>2</td><td style="white-space:nowrap">  validate-report<a name="fr-cs-vs-plandefinition-actions-validate-report"> </a></td><td>Validate Report against specified profiles and terminologies.</td><td>Validate Report against specified profiles and terminologies.</td></tr><tr><td>2</td><td style="white-space:nowrap">  submit-report<a name="fr-cs-vs-plandefinition-actions-submit-report"> </a></td><td>Submit the report to specified endpoint</td><td>Submit the report to specified endpoint.</td></tr><tr><td>2</td><td style="white-space:nowrap">  deidentify-report<a name="fr-cs-vs-plandefinition-actions-deidentify-report"> </a></td><td>Deidentify the report before submitting the report</td><td>Deidentify the report before submitting the report.</td></tr><tr><td>2</td><td style="white-space:nowrap">  anonymize-report<a name="fr-cs-vs-plandefinition-actions-anonymize-report"> </a></td><td>Anonymize the report before submitting the report</td><td>Anonymize the report before submitting the report.</td></tr><tr><td>2</td><td style="white-space:nowrap">  pseudonymize-report<a name="fr-cs-vs-plandefinition-actions-pseudonymize-report"> </a></td><td>Pseudonymize the report before submitting the report</td><td>Pseudonymize the report before submitting the report.</td></tr><tr><td>2</td><td style="white-space:nowrap">  encrypt-report<a name="fr-cs-vs-plandefinition-actions-encrypt-report"> </a></td><td>Encrypt the report before submitting the report</td><td>Encrypt the report before submitting the report.</td></tr><tr><td>2</td><td style="white-space:nowrap">  complete-reporting<a name="fr-cs-vs-plandefinition-actions-complete-reporting"> </a></td><td>Complete reporting for the patient</td><td>Complete the reporting for the patient, after which no further reports will be sent for a specific context (e.g., Encounter).</td></tr><tr><td>2</td><td style="white-space:nowrap">  extract-research-data<a name="fr-cs-vs-plandefinition-actions-extract-research-data"> </a></td><td>Extract data from a Data Source for one or more patients.</td><td>Extract data from a Data Source for one or more patients for research purposes.</td></tr><tr><td>2</td><td style="white-space:nowrap">  load-research-data<a name="fr-cs-vs-plandefinition-actions-load-research-data"> </a></td><td>Load extracted data from a Data Source to a data mart.</td><td>Extracted data from a Data Source for one or more patients for research purposes.</td></tr><tr><td>1</td><td style="white-space:nowrap">terminate-reporting-workflow<a name="fr-cs-vs-plandefinition-actions-terminate-reporting-workflow"> </a></td><td>Terminate a reporting workflow</td><td>Request the initiation of terminating a reporting workflow.</td></tr><tr><td>2</td><td style="white-space:nowrap">  cancel-report<a name="fr-cs-vs-plandefinition-actions-cancel-report"> </a></td><td>Cancel an already submitted report</td><td>Cancel an already submitted report.</td></tr><tr><td>1</td><td style="white-space:nowrap">report-chronic-disease-surveillance<a name="fr-cs-vs-plandefinition-actions-report-chronic-disease-surveillance"> </a></td><td>Report Chronic Disease Surveillance report</td><td>This action represents the reporting of a Chronic Disease Surveillance report.</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions"/>
+  <version value="0.1.0"/>
+  <name value="CSPlanDefinitionActions"/>
+  <title value="FR Veille Sanitaire PlanDefinition Action Codes"/>
+  <status value="draft"/>
+  <date value="2024-10-04T15:18:57+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="The FR Veille Sanitaire PlanDefinition Actions CodeSystem is a 'starter set' of codes supported for identifying actions in PlanDefinition."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="19"/>
+  <concept>
+    <code value="initiate-reporting-workflow"/>
+    <display value="Initiate a reporting workflow"/>
+    <definition value="Request the initiation of a reporting workflow for a patient for a specific context (e.g., encounter)."/>
+  </concept>
+  <concept>
+    <code value="execute-reporting-workflow"/>
+    <display value="Execute a series of actions to accomplish reporting"/>
+    <definition value="This is top level action that uses other defined actions to accomplish reporting for a specific context (e.g., encounter)."/>
+    <concept>
+      <code value="check-trigger-codes"/>
+      <display value="Evaluate candidate patient's data against trigger codes to determine reportability"/>
+      <definition value="Evaluate candidate patient's data against trigger codes to determine reportability."/>
+    </concept>
+    <concept>
+      <code value="evaluate-condition"/>
+      <display value="Evaluate condition to determine reportability"/>
+      <definition value="Evaluate condition to determine reportability."/>
+    </concept>
+    <concept>
+      <code value="evaluate-measure"/>
+      <display value="Evaluate measure to determine reportability"/>
+      <definition value="Evaluate measure to determine reportability."/>
+    </concept>
+    <concept>
+      <code value="check-participant-registration"/>
+      <display value="Evaluate participants in encounter for reportability"/>
+      <definition value="Evaluate encounter participants such as patient, practitioner, organization on whether they have been selected for reportability."/>
+    </concept>
+    <concept>
+      <code value="create-report"/>
+      <display value="Create a report for submission to a PHA or a Research Organization"/>
+      <definition value="Create a Report containing data for patients or participants who have been identified by other medmorph plandefinition actions such as initiate-reporting-workflow, check-trigger-codes and check-participant-registration."/>
+    </concept>
+    <concept>
+      <code value="validate-report"/>
+      <display value="Validate Report against specified profiles and terminologies."/>
+      <definition value="Validate Report against specified profiles and terminologies."/>
+    </concept>
+    <concept>
+      <code value="submit-report"/>
+      <display value="Submit the report to specified endpoint"/>
+      <definition value="Submit the report to specified endpoint."/>
+    </concept>
+    <concept>
+      <code value="deidentify-report"/>
+      <display value="Deidentify the report before submitting the report"/>
+      <definition value="Deidentify the report before submitting the report."/>
+    </concept>
+    <concept>
+      <code value="anonymize-report"/>
+      <display value="Anonymize the report before submitting the report"/>
+      <definition value="Anonymize the report before submitting the report."/>
+    </concept>
+    <concept>
+      <code value="pseudonymize-report"/>
+      <display value="Pseudonymize the report before submitting the report"/>
+      <definition value="Pseudonymize the report before submitting the report."/>
+    </concept>
+    <concept>
+      <code value="encrypt-report"/>
+      <display value="Encrypt the report before submitting the report"/>
+      <definition value="Encrypt the report before submitting the report."/>
+    </concept>
+    <concept>
+      <code value="complete-reporting"/>
+      <display value="Complete reporting for the patient"/>
+      <definition value="Complete the reporting for the patient, after which no further reports will be sent for a specific context (e.g., Encounter)."/>
+    </concept>
+    <concept>
+      <code value="extract-research-data"/>
+      <display value="Extract data from a Data Source for one or more patients."/>
+      <definition value="Extract data from a Data Source for one or more patients for research purposes."/>
+    </concept>
+    <concept>
+      <code value="load-research-data"/>
+      <display value="Load extracted data from a Data Source to a data mart."/>
+      <definition value="Extracted data from a Data Source for one or more patients for research purposes."/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="terminate-reporting-workflow"/>
+    <display value="Terminate a reporting workflow"/>
+    <definition value="Request the initiation of terminating a reporting workflow."/>
+    <concept>
+      <code value="cancel-report"/>
+      <display value="Cancel an already submitted report"/>
+      <definition value="Cancel an already submitted report."/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="report-chronic-disease-surveillance"/>
+    <display value="Report Chronic Disease Surveillance report"/>
+    <definition value="This action represents the reporting of a Chronic Disease Surveillance report."/>
+  </concept>
+</CodeSystem>

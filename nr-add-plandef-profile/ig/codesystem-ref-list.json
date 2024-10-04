@@ -1,0 +1,15 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSPlanDefinitionActions",
+      "title" : "FR Veille Sanitaire PlanDefinition Action Codes",
+      "description" : "The FR Veille Sanitaire PlanDefinition Actions CodeSystem is a 'starter set' of codes supported for identifying actions in PlanDefinition.",
+      "uses" : {
+      },
+      "ValueSet-fr-vs-vs-plandefinition-actions.html" : "FR Veille Sanitaire PlanDefinition Action Codes"
+    }
+  ]
+}

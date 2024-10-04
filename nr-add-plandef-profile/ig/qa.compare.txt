@@ -1,0 +1,41 @@
+VS : Validation Results
+=========================================
+
+err = 0, warn = 6, info = 18
+$--
+Generated $--. FHIR version $-- for ans.fhir.fr.vs#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/vs)
+ Build Errors : 0 / 3 / 0
+ /home/runner/work/IG-fhir-veille-sanitaire/IG-fhir-veille-sanitaire/igSource/fsh-generated/resources/CodeSystem-fr-cs-vs-plandefinition-actions : 0 / 2 / 3
+ /home/runner/work/IG-fhir-veille-sanitaire/IG-fhir-veille-sanitaire/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.vs : 0 / 0 / 1
+ /home/runner/work/IG-fhir-veille-sanitaire/IG-fhir-veille-sanitaire/igSource/fsh-generated/resources/StructureDefinition-vs-plandefinition : 0 / 1 / 17
+ /home/runner/work/IG-fhir-veille-sanitaire/IG-fhir-veille-sanitaire/igSource/fsh-generated/resources/ValueSet-fr-vs-vs-plandefinition-actions : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-fr-cs-vs-plandefinition-actions.json ==
+INFORMATION: CodeSystem/fr-cs-vs-plandefinition-actions: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+INFORMATION: CodeSystem/fr-cs-vs-plandefinition-actions: CodeSystem: CodeSystems SHOULD have a stated value for the hierarchyMeaning element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/fr-cs-vs-plandefinition-actions: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/fr-cs-vs-plandefinition-actions: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/ImplementationGuide-ans.fhir.fr.vs.json ==
+== fsh-generated/resources/StructureDefinition-vs-plandefinition.json ==
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[30].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[117].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions|0.1.0
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[176].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions|0.1.0
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[228].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions|0.1.0
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[280].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions|0.1.0
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[332].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions|0.1.0
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions|0.1.0
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.differential.element[19].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions|0.1.0
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.differential.element[23].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions|0.1.0
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.differential.element[30].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions|0.1.0
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.differential.element[38].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/vs/CodeSystem/fr-cs-vs-plandefinition-actions|0.1.0
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[117].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[176].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[228].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[280].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/vs-plandefinition: StructureDefinition.snapshot.element[332].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/vs/StructureDefinition/vs-plandefinition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-fr-vs-vs-plandefinition-actions.json ==

@@ -1,0 +1,67 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class VsPlanDefinitionProfile{
+
+             PlanDefinition.action => [5..None]
+             PlanDefinition.action.code => [None..1]
+             PlanDefinition.action.relatedAction.offset[x] => [None..None]
+             PlanDefinition.action.relatedAction.offset[x]:offsetDuration => [0..1]
+             PlanDefinition.action:initiateReporting => [1..1]
+             PlanDefinition.action:initiateReporting.id => [1..None]
+             PlanDefinition.action:initiateReporting.description => [1..None]
+             PlanDefinition.action:initiateReporting.textEquivalent => [1..None]
+             PlanDefinition.action:initiateReporting.code => [1..None]
+             PlanDefinition.action:initiateReporting.trigger => [1..None]
+             PlanDefinition.action:initiateReporting.trigger.type => [None..None]
+             PlanDefinition.action:initiateReporting.trigger.name => [None..None]
+             PlanDefinition.action:initiateReporting.relatedAction => [1..1]
+             PlanDefinition.action:initiateReporting.relatedAction.actionId => [None..None]
+             PlanDefinition.action:initiateReporting.relatedAction.relationship => [None..None]
+             PlanDefinition.action:executeReportingWorkflow => [1..1]
+             PlanDefinition.action:executeReportingWorkflow.id => [1..None]
+             PlanDefinition.action:executeReportingWorkflow.description => [1..None]
+             PlanDefinition.action:executeReportingWorkflow.code => [1..None]
+             PlanDefinition.action:createReport => [1..1]
+             PlanDefinition.action:createReport.id => [1..None]
+             PlanDefinition.action:createReport.description => [None..None]
+             PlanDefinition.action:createReport.code => [1..None]
+             PlanDefinition.action:createReport.relatedAction => [1..1]
+             PlanDefinition.action:createReport.relatedAction.actionId => [None..None]
+             PlanDefinition.action:createReport.relatedAction.relationship => [None..None]
+             PlanDefinition.action:validateReport => [1..1]
+             PlanDefinition.action:validateReport.id => [1..None]
+             PlanDefinition.action:validateReport.description => [None..None]
+             PlanDefinition.action:validateReport.code => [1..None]
+             PlanDefinition.action:validateReport.relatedAction => [1..1]
+             PlanDefinition.action:validateReport.relatedAction.actionId => [None..None]
+             PlanDefinition.action:validateReport.relatedAction.relationship => [None..None]
+             PlanDefinition.action:routeAndSendReport => [1..1]
+             PlanDefinition.action:routeAndSendReport.id => [1..None]
+             PlanDefinition.action:routeAndSendReport.description => [1..None]
+             PlanDefinition.action:routeAndSendReport.textEquivalent => [1..None]
+             PlanDefinition.action:routeAndSendReport.code => [1..None]
+         }
+
+     }
+     package extension #paleturquoise {
+
+
+         }
+     }
+     package valueset #PaleVioletRed{
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "PlanDefinition" as  class0375201638a0df09e5ecd3c0b36df917 
+
+    class0375201638a0df09e5ecd3c0b36df917 --> VsPlanDefinitionProfile
+}
+@enduml
